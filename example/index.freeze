@@ -1,0 +1,9 @@
+* import 'header.freeze' *
+
+* for item in context.items *
+    <div class="item-card">
+        <div class="item-name">* uprint item.name *</div>
+    </div>
+* endfor *
+
+* import 'footer.freeze' *
