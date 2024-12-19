@@ -10,7 +10,7 @@ use Freeze\Component\Template\Node\Import;
 
 final class ImportParser implements NodeParserInterface
 {
-    private const NODE_PATTERN = '^\s*import\s*[\"\'](?<template>.+)[\"\']\s*$';
+    private const NODE_PATTERN = "^\s*import\s*([\"'])(?<template>.+)(\1)\s*$";
 
     public function create(array $arguments): NodeInterface
     {

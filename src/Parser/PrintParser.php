@@ -10,7 +10,7 @@ use Freeze\Component\Template\Node\PrintNode;
 
 final class PrintParser implements NodeParserInterface
 {
-    const PRINT_PATTERN = '^\s*(?<unsafe>u)?print\s*(?<variable>.+)\s*$';
+    private const PRINT_PATTERN = '^\s*(?<unsafe>u)?print\s*(?<variable>.+)\s*$';
 
     public function getPattern(): string
     {
